@@ -210,3 +210,4 @@ app.post('/api/download-word', async (req, res) => {
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`🚀 Server Backend đang chạy tại http://localhost:${PORT}`));
+module.exports = app;
