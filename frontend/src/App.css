@@ -1,0 +1,43 @@
+.preview-container {
+  width: 100%;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  padding: 10px 15px;
+  background: #f1f3f4;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.download-btn {
+  padding: 10px 15px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.preview-content {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-height: 60vh;
+  overflow-y: auto; /* Hiển thị thanh cuộn nếu đề dài */
+  text-align: left;
+}
+
+.text-center { text-align: center; }
+.question { margin-bottom: 15px; }
+.question ul { list-style-type: none; padding-left: 10px; }
+.question li { margin-bottom: 5px; }
