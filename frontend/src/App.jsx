@@ -14,7 +14,7 @@ function App() {
     setIsLoading(true);
     setExamData(null);
     try {
-      const response = await fetch('http://localhost:5000/api/generate-exam', {
+      const response = await fetch('https://website-tao-de-thi.vercel.app/api/generate-exam', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -32,7 +32,7 @@ function App() {
   // Nút 2: Gửi lại JSON xuống Server để lấy Word
   const handleDownloadWord = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/download-word', {
+      const response = await fetch('https://website-tao-de-thi.vercel.app/api/download-word', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ examData }),
